@@ -1,4 +1,4 @@
-package com.googry.mogakko.ext
+package com.googry.sushicount.ext
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentActivity

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SushiCount</string>
+    <string name="dashboard">대시보드</string>
+    <string name="timeline">타임라인</string>
+    <string name="analysis">분석</string>
+    <string name="setting">설정</string>
 </resources>

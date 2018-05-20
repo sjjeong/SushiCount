@@ -2,8 +2,8 @@ package com.googry.sushicount.base
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import com.googry.mogakko.ext.addFragment
 import com.googry.sushicount.R
+import com.googry.sushicount.ext.addFragment
 import dagger.android.support.DaggerAppCompatActivity
 
 abstract class BaseFragmentBindingActivity : DaggerAppCompatActivity() {

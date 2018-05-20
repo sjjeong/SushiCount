@@ -37,6 +37,7 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutLibVersion"
 
     kapt "com.android.databinding:compiler:$gradle_version"
