@@ -56,5 +56,4 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$aacLifecycleVersion"
     kapt "android.arch.lifecycle:compiler:$aacLifecycleVersion"
 
-
 }

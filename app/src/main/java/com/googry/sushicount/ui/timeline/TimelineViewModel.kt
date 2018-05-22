@@ -1,5 +1,6 @@
 package com.googry.sushicount.ui.timeline
 
+import android.app.Application
 import android.databinding.ObservableArrayList
 import com.googry.sushicount.base.BaseViewModel
 import com.googry.sushicount.data.model.Timeline
@@ -7,7 +8,8 @@ import com.googry.sushicount.data.model.Timeline
 /**
  * Created by seokjunjeong on 2018. 5. 20..
  */
-class TimelineViewModel : BaseViewModel() {
+class TimelineViewModel(application: Application)
+    : BaseViewModel(application) {
 
     val timelines = ObservableArrayList<Timeline>()
 

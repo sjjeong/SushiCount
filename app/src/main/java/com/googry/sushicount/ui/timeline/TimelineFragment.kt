@@ -1,5 +1,6 @@
 package com.googry.sushicount.ui.timeline
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.view.View
@@ -10,6 +11,7 @@ import com.googry.sushicount.base.BaseFragment
 import com.googry.sushicount.base.BaseRecyclerViewAdapter
 import com.googry.sushicount.data.model.Timeline
 import com.googry.sushicount.databinding.TimelineFragmentBinding
+import com.googry.sushicount.ui.sushi_input.SushiInputActivity
 import javax.inject.Inject
 
 /**
@@ -38,7 +40,7 @@ class TimelineFragment : BaseFragment<TimelineFragmentBinding>(R.layout.timeline
                     super.onScrolled(recyclerView, dx, dy)
                     if (dy > 0 && fabAddTimeline.visibility == View.VISIBLE) {
                         fabAddTimeline.hide()
-                    }else if(dy < 0 && fabAddTimeline.visibility != View.VISIBLE){
+                    } else if (dy < 0 && fabAddTimeline.visibility != View.VISIBLE) {
                         fabAddTimeline.show()
                     }
                 }
@@ -48,6 +50,6 @@ class TimelineFragment : BaseFragment<TimelineFragmentBinding>(R.layout.timeline
 
     // DataBinding Function
     fun showAddPopup() {
-        Toast.makeText(context, "test", Toast.LENGTH_SHORT).show()
+        startActivity(Intent(context, SushiInputActivity::class.java))
     }
 }

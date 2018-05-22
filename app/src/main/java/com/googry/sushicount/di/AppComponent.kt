@@ -15,7 +15,8 @@ import javax.inject.Singleton
 @Component(modules = [
     AndroidSupportInjectionModule::class,
     AppModule::class,
-    ActivityBinder::class])
+    ActivityBinder::class,
+    FragmentBinder::class])
 interface AppComponent : AndroidInjector<SushiCountApplication> {
 
     @Component.Builder

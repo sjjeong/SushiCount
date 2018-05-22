@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.util.Date" />
+
+        <import type="com.googry.sushicount.ext.DateExtKt" />
+
+        <variable
+            name="vm"
+            type="com.googry.sushicount.ui.sushi_input.SushiInputViewModel" />
+
+        <variable
+            name="v"
+            type="com.googry.sushicount.ui.sushi_input.SushiInputFragment" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="@{() -> v.showDateTimePicker(vm.calendar)}"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@{vm.dateTime}"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="map" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="sushi list" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:onClick="@{() -> vm.save()}"
+                android:text="@string/save" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

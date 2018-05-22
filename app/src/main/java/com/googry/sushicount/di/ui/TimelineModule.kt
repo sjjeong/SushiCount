@@ -1,5 +1,6 @@
 package com.googry.sushicount.di.ui
 
+import android.app.Application
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
@@ -17,9 +18,11 @@ class TimelineModule {
 
     @Provides
     @FragmentScoped
-    fun provideTimelineViewModel(timelineFragment: TimelineFragment): TimelineViewModel =
+    fun provideTimelineViewModel(timelineFragment: TimelineFragment,
+                                 application: Application): TimelineViewModel =
             ViewModelProviders.of(timelineFragment, object : ViewModelProvider.Factory {
+                @Suppress("UNCHECKED_CAST")
                 override fun <T : ViewModel?> create(modelClass: Class<T>): T =
-                        TimelineViewModel() as T
+                        TimelineViewModel(application) as T
             })[TimelineViewModel::class.java]
 }

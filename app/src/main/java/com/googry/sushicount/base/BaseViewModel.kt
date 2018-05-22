@@ -1,9 +1,10 @@
 package com.googry.sushicount.base
 
-import android.arch.lifecycle.ViewModel
+import android.app.Application
+import android.arch.lifecycle.AndroidViewModel
 import io.reactivex.disposables.CompositeDisposable
 
-abstract class BaseViewModel : ViewModel() {
+abstract class BaseViewModel(application: Application) : AndroidViewModel(application) {
     protected val compositeDisposable = CompositeDisposable()
 
     override fun onCleared() {

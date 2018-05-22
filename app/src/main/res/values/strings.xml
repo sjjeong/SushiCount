@@ -4,4 +4,7 @@
     <string name="timeline">타임라인</string>
     <string name="analysis">분석</string>
     <string name="setting">설정</string>
+
+    <string name="date_time_format">yyyy년 MM월 dd일 E요일\na hh:mm</string>
+    <string name="save">저장</string>
 </resources>
