@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.googry.sushicount.R
 import com.googry.sushicount.base.BaseFragment
 import com.googry.sushicount.databinding.SushiInputFragmentBinding
@@ -45,6 +46,11 @@ class SushiInputFragment
                 calendar[Calendar.MONTH],
                 calendar[Calendar.DAY_OF_MONTH]
         ).show()
+    }
+
+    // DataBinding Function
+    fun showMarketDetail(){
+        Toast.makeText(context, "showMarketDetail", Toast.LENGTH_SHORT).show()
     }
 
 }

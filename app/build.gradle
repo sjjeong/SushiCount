@@ -56,4 +56,7 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$aacLifecycleVersion"
     kapt "android.arch.lifecycle:compiler:$aacLifecycleVersion"
 
+    // Kakao Map
+    implementation files('libs/libDaumMapAndroid.jar')
+    implementation files('libs/libDaumMapEngine.jar')
 }

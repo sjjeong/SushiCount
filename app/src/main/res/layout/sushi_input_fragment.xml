@@ -40,14 +40,18 @@
                 android:text="@{vm.dateTime}"
                 android:textSize="28sp" />
 
-            <TextView
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_margin="12dp"
-                android:background="@android:color/holo_green_light"
-                android:gravity="center"
-                android:text="map" />
+                android:layout_margin="12dp">
 
+                <com.googry.sushicount.ui.custom.NonDragDaumMapView
+                    android:id="@+id/daum_map_view"
+                    android:layout_width="match_parent"
+                    sushiMarket="@{vm.sushiMarket}"
+                    android:onClick="@{() -> v.showMarketDetail()}"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
 
             <TextView
                 android:layout_width="match_parent"
