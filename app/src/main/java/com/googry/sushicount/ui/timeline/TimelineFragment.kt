@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.googry.sushicount.R
 import com.googry.sushicount.base.BaseFragment
 import com.googry.sushicount.base.BaseRecyclerViewAdapter
 import com.googry.sushicount.data.model.Timeline
 import com.googry.sushicount.databinding.TimelineFragmentBinding
-import com.googry.sushicount.ui.sushi_input.SushiInputActivity
+import com.googry.sushicount.ui.sushi.input.SushiInputActivity
 import javax.inject.Inject
 
 /**

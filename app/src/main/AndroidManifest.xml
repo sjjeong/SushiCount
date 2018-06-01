@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.sushi_input.SushiInputActivity"
+            android:name="com.googry.sushicount.ui.sushi.input.SushiInputActivity"
             android:screenOrientation="portrait" />
     </application>
 

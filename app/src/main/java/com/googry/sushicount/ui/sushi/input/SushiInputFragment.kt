@@ -1,4 +1,4 @@
-package com.googry.sushicount.ui.sushi_input
+package com.googry.sushicount.ui.sushi.input
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog

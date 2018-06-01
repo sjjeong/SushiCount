@@ -1,7 +1,7 @@
 package com.googry.sushicount.di
 
 import com.googry.sushicount.di.ui.SushiInputModule
-import com.googry.sushicount.ui.sushi_input.SushiInputFragment
+import com.googry.sushicount.ui.sushi.input.SushiInputFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

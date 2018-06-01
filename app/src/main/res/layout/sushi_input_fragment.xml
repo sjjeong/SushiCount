@@ -9,11 +9,11 @@
 
         <variable
             name="vm"
-            type="com.googry.sushicount.ui.sushi_input.SushiInputViewModel" />
+            type="com.googry.sushicount.ui.sushi.input.SushiInputViewModel" />
 
         <variable
             name="v"
-            type="com.googry.sushicount.ui.sushi_input.SushiInputFragment" />
+            type="com.googry.sushicount.ui.sushi.input.SushiInputFragment" />
 
     </data>
 

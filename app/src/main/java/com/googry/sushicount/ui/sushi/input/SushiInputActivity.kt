@@ -1,4 +1,4 @@
-package com.googry.sushicount.ui.sushi_input
+package com.googry.sushicount.ui.sushi.input
 
 import android.support.v4.app.Fragment
 import com.googry.sushicount.base.BaseFragmentBindingActivity

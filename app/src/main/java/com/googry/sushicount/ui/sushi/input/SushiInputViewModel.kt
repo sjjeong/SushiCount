@@ -1,4 +1,4 @@
-package com.googry.sushicount.ui.sushi_input
+package com.googry.sushicount.ui.sushi.input
 
 import android.app.Application
 import android.databinding.ObservableField
