@@ -1,6 +1,6 @@
 package com.googry.sushicount.di
 
-import com.googry.sushicount.di.ui.MainModule
+import com.googry.sushicount.di.ui.main.MainModule
 import com.googry.sushicount.ui.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

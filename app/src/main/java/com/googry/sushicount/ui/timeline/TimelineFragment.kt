@@ -10,7 +10,7 @@ import com.googry.sushicount.base.BaseFragment
 import com.googry.sushicount.base.BaseRecyclerViewAdapter
 import com.googry.sushicount.data.model.Timeline
 import com.googry.sushicount.databinding.TimelineFragmentBinding
-import com.googry.sushicount.ui.sushi.input.SushiInputActivity
+import com.googry.sushicount.ui.sushi.search_store.SearchStoreActivity
 import javax.inject.Inject
 
 /**
@@ -49,6 +49,6 @@ class TimelineFragment : BaseFragment<TimelineFragmentBinding>(R.layout.timeline
 
     // DataBinding Function
     fun showAddPopup() {
-        startActivity(Intent(context, SushiInputActivity::class.java))
+        startActivity(Intent(context, SearchStoreActivity::class.java))
     }
 }

@@ -12,7 +12,7 @@ import com.googry.sushicount.data.model.Timeline
 fun setTimelines(recyclerView: RecyclerView, timelines: List<Timeline>) {
     @Suppress("UNCHECKED_CAST")
     (recyclerView.adapter as? BaseRecyclerViewAdapter<Timeline>)?.run {
-        replaceAll(timelines)
+        restoreAll(timelines)
         notifyDataSetChanged()
     }
 }

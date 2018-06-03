@@ -3,9 +3,9 @@ package com.googry.sushicount.base
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.view.MenuItem
 import com.googry.sushicount.R
 import com.googry.sushicount.ext.addFragment
-import dagger.android.support.DaggerAppCompatActivity
 
 /**
  * Fragment를 보여주기 위한 Activity
@@ -20,7 +20,16 @@ abstract class BaseFragmentBindingActivity : AppCompatActivity() {
         fragment = createFragment().apply {
             addFragment(this)
         }
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if (item?.itemId == android.R.id.home) {
+            finish()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     abstract fun createFragment(): Fragment
+
 }

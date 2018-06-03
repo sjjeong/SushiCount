@@ -12,7 +12,7 @@ import com.googry.sushicount.databinding.TimelineItemBinding
 class TimelineViewHolder(
         @LayoutRes layoutRes: Int,
         parent: ViewGroup?)
-    : BaseViewHolder<Timeline, TimelineItemBinding>(layoutRes, parent){
+    : BaseViewHolder<Timeline, TimelineItemBinding>(layoutRes, parent) {
 
     override fun onViewCreated(item: Timeline?) {
         binding?.run {

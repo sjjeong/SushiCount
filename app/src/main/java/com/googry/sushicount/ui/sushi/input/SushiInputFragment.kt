@@ -49,8 +49,8 @@ class SushiInputFragment
     }
 
     // DataBinding Function
-    fun showMarketDetail(){
-        Toast.makeText(context, "showMarketDetail", Toast.LENGTH_SHORT).show()
+    fun showStoreDetail() {
+        Toast.makeText(context, "showStoreDetail", Toast.LENGTH_SHORT).show()
     }
 
 }

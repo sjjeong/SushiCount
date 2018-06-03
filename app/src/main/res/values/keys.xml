@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="kakao_native_key">a57c1ace5ecc2c3f5732625e9d2ae498</string>
+    <string name="kakao_rest_key">81512d94c53c6874552ab6246294a74c</string>
 </resources>

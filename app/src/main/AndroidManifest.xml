@@ -25,10 +25,14 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
         <activity
-            android:name="com.googry.sushicount.ui.sushi.input.SushiInputActivity"
+            android:name=".ui.sushi.input.SushiInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sushi.search_store.SearchStoreActivity"
             android:screenOrientation="portrait" />
     </application>
 

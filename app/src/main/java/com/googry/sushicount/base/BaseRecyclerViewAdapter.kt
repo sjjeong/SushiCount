@@ -16,7 +16,7 @@ abstract class BaseRecyclerViewAdapter<ITEM : Any>
         }
     }
 
-    fun replaceAll(items: List<ITEM>?) {
+    fun restoreAll(items: List<ITEM>?) {
         items?.let {
             data.run {
                 clear()

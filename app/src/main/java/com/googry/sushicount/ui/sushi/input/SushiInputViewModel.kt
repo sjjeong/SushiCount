@@ -3,8 +3,8 @@ package com.googry.sushicount.ui.sushi.input
 import android.app.Application
 import android.databinding.ObservableField
 import com.googry.sushicount.base.BaseViewModel
-import com.googry.sushicount.data.model.SushiMarket
 import com.googry.sushicount.ext.formatDateTime
+import com.googry.sushicount.network.model.KakaoSearchResponse
 import java.util.*
 
 /**
@@ -14,14 +14,12 @@ class SushiInputViewModel(application: Application)
     : BaseViewModel(application) {
 
     val dateTime = ObservableField<String>()
-    val sushiMarket = ObservableField<SushiMarket>()
+    val sushiStore = ObservableField<KakaoSearchResponse.Document>()
 
     val calendar = Calendar.getInstance()
 
     init {
         createDateTimeString()
-        //sample
-        sushiMarket.set(SushiMarket(37.498790, 127.029089, "갓덴스시 강남역"))
     }
 
     fun setCalendar(year: Int,

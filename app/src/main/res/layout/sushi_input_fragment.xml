@@ -47,10 +47,10 @@
 
                 <com.googry.sushicount.ui.custom.NonDragDaumMapView
                     android:id="@+id/daum_map_view"
+                    sushiStore="@{vm.sushiStore}"
                     android:layout_width="match_parent"
-                    sushiMarket="@{vm.sushiMarket}"
-                    android:onClick="@{() -> v.showMarketDetail()}"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:onClick="@{() -> v.showStoreDetail()}" />
             </FrameLayout>
 
             <TextView

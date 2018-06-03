@@ -1,4 +1,4 @@
-package com.googry.sushicount.di.ui
+package com.googry.sushicount.di.ui.main
 
 import com.googry.sushicount.di.FragmentScoped
 import com.googry.sushicount.ui.analysis.AnalysisFragment

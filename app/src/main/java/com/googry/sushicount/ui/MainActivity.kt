@@ -11,6 +11,7 @@ class MainActivity : BaseActivity<MainActivityBinding>(R.layout.main_activity) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         binding.run {
             vpContent.run {
                 adapter = MainViewPagerAdapter(supportFragmentManager)

@@ -16,7 +16,10 @@ import javax.inject.Singleton
     AndroidSupportInjectionModule::class,
     AppModule::class,
     ActivityBinder::class,
-    FragmentBinder::class])
+    FragmentBinder::class,
+    ApiModule::class,
+    NetworkModule::class,
+    LocalDataModule::class])
 interface AppComponent : AndroidInjector<SushiCountApplication> {
 
     @Component.Builder

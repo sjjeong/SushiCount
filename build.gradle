@@ -11,7 +11,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:$gradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
+        // NOTE: Do not store your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
@@ -43,5 +43,7 @@ ext {
     rxBindingVersion = '2.0.0'
     rxJavaVersion = '2.1.3'
 
+    okHttpVersion = '3.8.1'
+    retrofitVersion = '2.3.0'
 
 }
